@@ -3,27 +3,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
-
-@media (min-width: 361px){
-  .product{
-    box-shadow: 0px 0px 10px rgb (100,100,100);
-  }
-  .burger-menu{
-    display:none;
-  }
-  .total{
-    display: block;
-  }
-}
-
-@media (min-width: 769px){
-  .product{
-    box-shadow: 0px 0px 10px rgb (100,100,100);
-  }
-  .site{
-    display: none;
-  }
+  font-size: 12px;
 }
 
 main section article i {
@@ -35,30 +15,41 @@ main section article i {
   border: 1px solid #39b54a ;
   background-color: #FFF ;
   border-radius: 50%;
-  position: absolute ;
   right: 20px ;
   top: -15px ;
   }
 
 header{
   background-color: #EAC926;
-  width: 90vh;
+  width: 90vw;
   text-align: center;
+  margin: auto;
 }
 
 main{
   background-color: #ebebeb;
   text-align: center;
-  width: 90vh;
+  width: 90vw;
+  margin: auto;
 }
 
+footer{
+  background-color: #ebebeb;
+  padding: 12px;
+  width: 90vw;
+  text-align: center;
+  margin: auto;
+}
+
+
+
 img{
-  width: 90vh;
+  width: 100%;
 }
 
 ul{
   font-size: 12px;
-  flex-direction: column
+  list-style: none;
 }
 
 h1{
@@ -67,21 +58,26 @@ h1{
   padding: 10px;
 }
 
-footer{
-  background-color: #ebebeb;
-  padding: 12px;
-  width: 90vh;
+article{
+  width: 90%;
   text-align: center;
+  margin: auto;
 }
 
-.precio .discount {
-  display: flex;
-  flex-wrap: wrap;
+i{
+  font-size: 2em;
+}
+
+.main-header{
+  display:flex;
+  flex-wrap: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product{
   border: 1px solid #ebebeb;
-  width: 90vh;
+  width: 90%;
 }
 
 .total{
@@ -91,24 +87,30 @@ footer{
   display: none;
 }
 
+.price-discount{
+  display:flex;
+  flex-wrap: wrap;
+}
+
 .precio{
   font-size: 18px;
-  color: #39b54a;
 }
 
 .discount{
   font-size:16px;
+  color: #39b54a;
+  padding-left: 10px;
 }
 
 .descrip{
   font-size:16px;
-
 }
 
 .icon{
   color: #03264C;
   padding: 10px;
   text-align: center;
+  font-size: 2em
 }
 
 .truckie{
@@ -125,7 +127,6 @@ footer{
 
 .product-image{
   border: 10px;
-  width: 70%;
 }
 
 #bars{
@@ -135,4 +136,63 @@ footer{
   border-radius:5px;
 }
 
+#logo, #buscador{
+  width: 50%;
+}
 
+#buscador input{
+  width: 50%;
+}
+
+.site{
+  display: none;
+}
+
+@media (min-width: 361px){
+  .product{
+    box-shadow: 0px 0px 10px rgb (100,100,100);
+  }
+  .burger-menu{
+    display:none;
+  }
+  .total{
+    /*es aquí*/
+    display: block;
+  }
+  article{
+    max-width: 50%;
+  }
+  .contenedor1, .contenedor2{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1{
+    display: block;
+  }
+  .site{
+    display: flex;
+    flex-direction: row;
+    }
+  }
+
+
+
+@media (min-width: 769px){
+  .product{
+    box-shadow: 0px 0px 10px rgb (100,100,100);
+  }
+
+article{
+    max-width: 25%;
+  }
+
+  .main-header{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #logo, #buscador{
+    width: 20%;
+  }
+
+  
+}
