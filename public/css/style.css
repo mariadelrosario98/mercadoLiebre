@@ -41,8 +41,6 @@ footer{
   margin: auto;
 }
 
-
-
 img{
   width: 100%;
 }
@@ -169,9 +167,16 @@ i{
   h1{
     display: block;
   }
+  li{
+    padding: 10px;
+  }
+  ul{
+    display: flex;
+    align-items:center;
+  }
   .site{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     }
   }
 
