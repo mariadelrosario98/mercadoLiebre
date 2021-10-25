@@ -26,6 +26,7 @@ header{
   margin: auto;
 }
 
+
 main{
   background-color: #ebebeb;
   text-align: center;
@@ -60,10 +61,37 @@ article{
   width: 90%;
   text-align: center;
   margin: auto;
+  padding: 10px;
+  border-radius: 5px
 }
 
 i{
   font-size: 2em;
+}
+
+.enviar{
+  background-color:#03264C;
+  color: white;
+  width: 30vw;
+}
+
+.enviar:hover{
+  background-color:#0022AA;
+}
+
+.header-register{
+  background-color: white;
+}
+
+.cajoncito{
+  background-color:#ebebeb;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.caja{
+  padding: 10px;
 }
 
 .main-header{
@@ -76,6 +104,11 @@ i{
 .product{
   border: 1px solid #ebebeb;
   width: 90%;
+  border-radius: 5px;
+}
+
+.product:hover{
+  box-shadow: 0 0 10px rgb(100, 100,100);
 }
 
 .total{
@@ -102,6 +135,10 @@ i{
 
 .descrip{
   font-size:16px;
+  opacity: 0;
+}
+.descrip:hover{
+  opacity: 1;
 }
 
 .icon{
@@ -115,7 +152,18 @@ i{
   background-color: white;
   color: #39b54a;
   text-align: left;
+  position: relative;
+  max-width:2px;
+  left: 85%;
+  bottom: 30px;
+  width: 100%;
+  transition: .20s ease all;
 }
+
+.truckie:hover{
+  transform: rotate(-450deg);
+}
+
 
 .icon-header{
   color: #03264C;
@@ -146,6 +194,14 @@ i{
   display: none;
 }
 
+#login{
+  background-color: white;
+}
+
+.icon:hover {
+  color: #39b54a;
+}
+
 @media (min-width: 361px){
   .product{
     box-shadow: 0px 0px 10px rgb (100,100,100);
@@ -154,16 +210,18 @@ i{
     display:none;
   }
   .total{
-    /*es aquí*/
+    position: relative;
     display: block;
   }
   article{
     max-width: 50%;
+    padding: 10px;
   }
   .contenedor1, .contenedor2{
     display: flex;
     flex-wrap: wrap;
   }
+
   h1{
     display: block;
   }
@@ -181,16 +239,20 @@ i{
   }
 
 
-
 @media (min-width: 769px){
+  article{
+    max-width: 25%;
+  }
+  section{
+    display:flex;
+    padding-bottom: 20px;
+  }
+  .icon:hover {
+    color: #39b54a;
+  }
   .product{
     box-shadow: 0px 0px 10px rgb (100,100,100);
   }
-
-article{
-    max-width: 25%;
-  }
-
   .main-header{
     flex-wrap: wrap;
     justify-content: space-between;
@@ -198,6 +260,7 @@ article{
   #logo, #buscador{
     width: 20%;
   }
-
-  
+  #copy{
+    margin: 20px;
+  }
 }
